@@ -1,6 +1,6 @@
 @US02
 Feature: Login User with correct
-  Scenario: TC04 Login User with correct email and password
+  Scenario: TC02 Login User with correct email and password
   Given Launch browser
   Then Navigate to url "HomePageUrl"
   Then Verify that home page is visible successfully

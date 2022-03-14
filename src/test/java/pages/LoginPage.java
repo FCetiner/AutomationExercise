@@ -25,5 +25,10 @@ public class LoginPage {
     @FindBy(xpath = "//h1[.='Delete Account']")
     public WebElement deleteAccountText;
 
+    @FindBy(xpath = "(//p)[1]")
+    public WebElement negativeLoginText;
+
+
+
 
 }
