@@ -42,8 +42,8 @@ public class LoginStepDefinition {
     String sheetName="Sayfa1";
         ExcelUtil excelUtil =new ExcelUtil(path,sheetName);
         List<Map<String, String>> loginData = excelUtil.getDataList();
-        loginPage.emailBox.sendKeys(loginData.get(1).get("Email"));
-        loginPage.passwordBox.sendKeys(loginData.get(1).get("Password"));
+        loginPage.emailBox.sendKeys(loginData.get(0).get("Email"));
+        loginPage.passwordBox.sendKeys(loginData.get(0).get("Password"));
     }
     
     @And("Verify error Your email or password is incorrect! is visible")
@@ -57,8 +57,8 @@ public class LoginStepDefinition {
         String sheetName = "Sayfa1";
         ExcelUtil excelUtil =new ExcelUtil(path,sheetName);
         List<Map<String, String>> loginData = excelUtil.getDataList();
-        loginPage.emailBox.sendKeys(loginData.get(2).get("Email"));
-        loginPage.passwordBox.sendKeys(loginData.get(2).get("Password"));
+        loginPage.emailBox.sendKeys(loginData.get(1).get("Email"));
+        loginPage.passwordBox.sendKeys(loginData.get(1).get("Password"));
     }
 
     @When("Enter correct email and incorrect password")
@@ -67,7 +67,7 @@ public class LoginStepDefinition {
         String sheetName="Sayfa1";
         ExcelUtil excelUtil=new ExcelUtil(path,sheetName);
         List<Map<String,String>>loginData=excelUtil.getDataList();
-        loginPage.emailBox.sendKeys(loginData.get(3).get("Email"));
-        loginPage.passwordBox.sendKeys(loginData.get(3).get("Password"));
+        loginPage.emailBox.sendKeys(loginData.get(2).get("Email"));
+        loginPage.passwordBox.sendKeys(loginData.get(2).get("Password"));
     }
 }
