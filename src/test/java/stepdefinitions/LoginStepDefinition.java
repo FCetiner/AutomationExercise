@@ -70,4 +70,22 @@ public class LoginStepDefinition {
         loginPage.emailBox.sendKeys(loginData.get(2).get("Email"));
         loginPage.passwordBox.sendKeys(loginData.get(2).get("Password"));
     }
+
+    @Then("Click Logout button")
+    public void clickLogoutButton() {
+        loginPage.logoutButton.click();
+    }
+
+    @Then("Verify that user is navigated to login page")
+    public void verifyThatUserIsNavigatedToLoginPage() {
+        Assert.assertTrue(loginPage.loginYourAccountText.isDisplayed());
+    }
+
+
+    @When("Enter correct {string} address and {string} using scenario Outliine")
+    public void enterCorrectAddressAndUsingScenarioOutliine(String email, String password) {
+        loginPage.emailBox.sendKeys(email);
+        loginPage.passwordBox.sendKeys(password);
+
+    }
 }

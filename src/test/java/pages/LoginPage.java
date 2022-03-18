@@ -28,7 +28,8 @@ public class LoginPage {
     @FindBy(xpath = "(//p)[1]")
     public WebElement negativeLoginText;
 
-
+    @FindBy(xpath = "//a[contains(text(),' Logout')]")
+    public WebElement logoutButton;
 
 
 }
