@@ -1,60 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="55.238">
-    <testcase classname="Negative login" name="TC03 Login User with incorrect email and password" time="20.731">
-        <failure message="" type="java.lang.NullPointerException">
-            <![CDATA[Given Launch browser........................................................passed
-Then Navigate to url "HomePageUrl"..........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.897">
+    <testcase classname="Register user with existing user" name="TC07 Registe with existing mail" time="21.289">
+        <system-out>
+            <![CDATA[When Launch browser.........................................................passed
+Given Navigate to url "HomePageUrl".........................................passed
 Then Verify that home page is visible successfully..........................passed
 And Click on Signup Login button............................................passed
-Then Verify Login to your account is visible................................passed
-When Enter incorrect email address and password.............................failed
-Then Click login button.....................................................skipped
-And Verify error Your email or password is incorrect! is visible............skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at utilities.ExcelUtil.getDataList(ExcelUtil.java:43)
-	at stepdefinitions.LoginStepDefinition.enterIncorrectEmailAddressAndPassword(LoginStepDefinition.java:43)
-	at ✽.Enter incorrect email address and password(file:///C:/Users/Ferhat/IdeaProjects/AutomationExercisePractice/src/test/resources/features/US003_LoginUserWithIncorrectMailAndPassword.feature:13)
+Then Verify New User Signup! is visible.....................................passed
+And Enter name and already registered email address.........................passed
+Then Click newuser Signup button............................................passed
+And Verify error Email Address already exist! is visible....................passed
 ]]>
-        </failure>
-    </testcase>
-    <testcase classname="Negative login" name="TC04 Login User with incorrect mail" time="15.493">
-        <failure message="" type="java.lang.NullPointerException">
-            <![CDATA[Given Launch browser........................................................passed
-Then Navigate to url "HomePageUrl"..........................................passed
-Then Verify that home page is visible successfully..........................passed
-And Click on Signup Login button............................................passed
-Then Verify Login to your account is visible................................passed
-When Enter incorrect email and correct password.............................failed
-Then Click login button.....................................................skipped
-And Verify error Your email or password is incorrect! is visible............skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at utilities.ExcelUtil.getDataList(ExcelUtil.java:43)
-	at stepdefinitions.LoginStepDefinition.enterIncorrectEmailAndCorrectPassword(LoginStepDefinition.java:58)
-	at ✽.Enter incorrect email and correct password(file:///C:/Users/Ferhat/IdeaProjects/AutomationExercisePractice/src/test/resources/features/US003_LoginUserWithIncorrectMailAndPassword.feature:18)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="Negative login" name="TC05 Login User with incorrect password" time="18.13">
-        <failure message="" type="java.lang.NullPointerException">
-            <![CDATA[Given Launch browser........................................................passed
-Then Navigate to url "HomePageUrl"..........................................passed
-Then Verify that home page is visible successfully..........................passed
-And Click on Signup Login button............................................passed
-Then Verify Login to your account is visible................................passed
-When Enter correct email and incorrect password.............................failed
-Then Click login button.....................................................skipped
-And Verify error Your email or password is incorrect! is visible............skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at utilities.ExcelUtil.getDataList(ExcelUtil.java:43)
-	at stepdefinitions.LoginStepDefinition.enterCorrectEmailAndIncorrectPassword(LoginStepDefinition.java:68)
-	at ✽.Enter correct email and incorrect password(file:///C:/Users/Ferhat/IdeaProjects/AutomationExercisePractice/src/test/resources/features/US003_LoginUserWithIncorrectMailAndPassword.feature:23)
-]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

@@ -60,6 +60,8 @@ public class RegisterUserStepDefinition {
 
 
 
+
+
     @Then("waits {int} seconds")
     public void waitsSeconds(int saniye) {
         ReusableMethods.waitFor(saniye);

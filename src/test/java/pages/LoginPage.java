@@ -31,5 +31,20 @@ public class LoginPage {
     @FindBy(xpath = "//a[contains(text(),' Logout')]")
     public WebElement logoutButton;
 
+    @FindBy(xpath = "//h2[.='New User Signup!']")
+    public WebElement newUserSignupText;
+
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement nameTextBox;
+
+    @FindBy(xpath = "(//input[@name='email'])[2]")
+    public WebElement signupUserEmailBox;
+
+    @FindBy(xpath = "(//button[@type='submit'])[2]")
+    public WebElement signupButton;
+
+    @FindBy(xpath = "//p[.='Email Address already exist!']")
+    public WebElement emailAlreadyExistText;
+
 
 }

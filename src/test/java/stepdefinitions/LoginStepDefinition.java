@@ -86,6 +86,23 @@ public class LoginStepDefinition {
     public void enterCorrectAddressAndUsingScenarioOutliine(String email, String password) {
         loginPage.emailBox.sendKeys(email);
         loginPage.passwordBox.sendKeys(password);
+    }
+
+    @Then("Enter name and already registered email address")
+    public void enter_name_and_already_registered_email_address(io.cucumber.datatable.DataTable dataTable) {
+        List<String> loginCredintals=dataTable.row(1);
+        loginPage.nameTextBox.sendKeys(loginCredintals.get(0));
+        loginPage.signupUserEmailBox.sendKeys(loginCredintals.get(1));
 
     }
+    @Then("Verify error Email Address already exist! is visible")
+    public void verify_error_email_address_already_exist_is_visible() {
+       Assert.assertTrue(loginPage.emailAlreadyExistText.isDisplayed());
+    }
+
+    @Then("Click newuser Signup button")
+    public void click_newuser_signup_button() {
+        loginPage.signupButton.click();
+    }
+
 }
