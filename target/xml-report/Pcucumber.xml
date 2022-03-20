@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.897">
-    <testcase classname="Register user with existing user" name="TC07 Registe with existing mail" time="21.289">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.082">
+    <testcase classname="Contact us form" name="TC08 User can contact us" time="37.952">
         <system-out>
             <![CDATA[When Launch browser.........................................................passed
 Given Navigate to url "HomePageUrl".........................................passed
 Then Verify that home page is visible successfully..........................passed
-And Click on Signup Login button............................................passed
-Then Verify New User Signup! is visible.....................................passed
-And Enter name and already registered email address.........................passed
-Then Click newuser Signup button............................................passed
-And Verify error Email Address already exist! is visible....................passed
+Then Click on Contact Us button.............................................passed
+And Verify GET IN TOUCH is visible..........................................passed
+Then Enter name, email, subject and message.................................passed
+Then Upload file............................................................passed
+Then Click Submit button....................................................passed
+And Click OK button.........................................................passed
+Then Verify success message Success! Your details have been submitted successfully. is visible.passed
+Then Click Home button and verify that landed to home page successfully.....passed
 ]]>
         </system-out>
     </testcase>
