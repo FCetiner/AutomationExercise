@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.082">
-    <testcase classname="Contact us form" name="TC08 User can contact us" time="37.952">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.997">
+    <testcase classname="US007 Verify Test Cases Page" name="TC09 User should be navigated to Test Cases Page" time="35.107">
         <system-out>
             <![CDATA[When Launch browser.........................................................passed
-Given Navigate to url "HomePageUrl".........................................passed
+Then Navigate to url "HomePageUrl"..........................................passed
 Then Verify that home page is visible successfully..........................passed
-Then Click on Contact Us button.............................................passed
-And Verify GET IN TOUCH is visible..........................................passed
-Then Enter name, email, subject and message.................................passed
-Then Upload file............................................................passed
-Then Click Submit button....................................................passed
-And Click OK button.........................................................passed
-Then Verify success message Success! Your details have been submitted successfully. is visible.passed
-Then Click Home button and verify that landed to home page successfully.....passed
+Then Click on Test Cases button.............................................passed
+Then Verify user is navigated to test cases page successfully...............passed
 ]]>
         </system-out>
     </testcase>
