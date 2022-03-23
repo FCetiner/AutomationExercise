@@ -32,4 +32,6 @@ public class ProductsStepDefinitions {
     public void verify_that_detail_detail_is_visible_product_name_category_price_availability_condition_brand() {
        productsPage.productInformationList.stream().forEach(t-> Assert.assertTrue(t.isDisplayed()));
     }
+
+
 }

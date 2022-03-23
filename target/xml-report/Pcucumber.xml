@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.696">
-    <testcase classname="US008_VerifyAllProductsAndProductDetailPage" name="TC10 product detail should be visible" time="31.972">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.96">
+    <testcase classname="US010_Verify Subscrition" name="TC12" time="0.203">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
             <![CDATA[When Launch browser.........................................................passed
 Then Navigate to url "HomePageUrl"..........................................passed
 Then Verify that home page is visible successfully..........................passed
-And Click on Products button................................................passed
-Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
-Then The products list is visible...........................................passed
-Then Click on View Product of first product.................................passed
-Then User is landed to product detail page..................................passed
-Then Verify that detail detail is visible: product name, category, price, availability, condition, brand.passed
+Then Scroll down to footer..................................................undefined
+And Verify text SUBSCRIPTION................................................skipped
+Then Enter email address in input and click arrow button....................skipped
+And Verify success message You have been successfully subscribed! is visible.skipped
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

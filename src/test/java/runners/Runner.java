@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/Pcucumber.xml"},
         features="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@US008",
-        dryRun =false
+        tags = "@US010",
+        dryRun =true
 )
 public class Runner {
     //Runner classinin bodysine hiçbir kod yazmiyoruz
