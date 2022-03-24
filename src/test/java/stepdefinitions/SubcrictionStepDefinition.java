@@ -27,4 +27,8 @@ public class SubcrictionStepDefinition {
        Assert.assertTrue(subcrictionPage.successSubscribeText.isDisplayed());
     }
 
+    @Then("Click Cart button")
+    public void clickCartButton() {
+        subcrictionPage.chartButton.click();
+    }
 }

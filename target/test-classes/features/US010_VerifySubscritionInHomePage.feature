@@ -1,7 +1,7 @@
 @US010
 Feature: US010_Verify Subscrition
 
-  Scenario: TC12
+  Scenario: TC12 Verify success message should be visible
 
   When Launch browser
   Then Navigate to url "HomePageUrl"

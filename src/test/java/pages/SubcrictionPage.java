@@ -24,4 +24,7 @@ public class SubcrictionPage {
 
     @FindBy(id = "success-subscribe")
     public WebElement successSubscribeText;
+
+    @FindBy(xpath = "//a[@href='/view_cart']")
+    public WebElement chartButton;
 }
