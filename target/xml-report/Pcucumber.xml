@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.96">
-    <testcase classname="US010_Verify Subscrition" name="TC12" time="0.203">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.111">
+    <testcase classname="US012 Add Products in Cart" name="TC14 Products should be added to cart" time="0.415">
         <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
             <![CDATA[When Launch browser.........................................................passed
 Then Navigate to url "HomePageUrl"..........................................passed
 Then Verify that home page is visible successfully..........................passed
-Then Scroll down to footer..................................................undefined
-And Verify text SUBSCRIPTION................................................skipped
-Then Enter email address in input and click arrow button....................skipped
-And Verify success message You have been successfully subscribed! is visible.skipped
+Then Click Products button..................................................undefined
+Then Hover over first product and click Add to cart.........................skipped
+Then Click Continue Shopping button.........................................skipped
+Then Hover over second product and click Add to cart........................skipped
+Then Click View Cart button.................................................skipped
+Then Verify both products are added to Cart.................................skipped
+Then Verify their prices, quantity and total price..........................skipped
 ]]>
         </failure>
     </testcase>
